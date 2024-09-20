@@ -15,8 +15,8 @@ function App() {
       const data = JSON.parse(jsonData);
       const requiredFields = data.map((item) => ({
         "IP Address": item.ip_address,
-        Name: "",
-        Password: "",
+        Name: "Spark",
+        Password: "Spark@123",
         "Camera Name": item.name,
         "RTSP URL": item.url,
       }));
@@ -53,6 +53,13 @@ function App() {
       >
         Generate Excel
       </button>
+
+      {/* Copyright Section */}
+      <footer className="mt-8 text-sm text-gray-400 flex items-center space-x-1">
+        <span>&copy; September 2024</span>
+        <span>Rahil Rashid</span>
+        <span>&reg;</span>
+      </footer>
     </div>
   );
 }
